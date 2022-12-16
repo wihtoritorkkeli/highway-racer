@@ -60,7 +60,6 @@ class Car:
 
     #This function takes care of drawing the cars on to the screen and moving them downwards.
     def draw(self, window):
-        #pygame.draw.rect(window,(255, 150, 30), (self.lane, self.y, self.width, self.height))
         window.blit(self.__img, (self.lane, self.y))
         self.y += self.speed
 
